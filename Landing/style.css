@@ -1,0 +1,110 @@
+body {
+    /* background-color: #c4c4c4; */
+    font-family: 'Roboto', sans-serif;
+	height: 75%;
+
+}
+
+/**
+ * Images a now responsive
+ */
+ img {
+	max-width: 100%;
+}
+
+/**
+ * Limit the container in
+ * width for big screens
+ */
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.main-nav ul {
+	margin-top: 1%;
+	text-align: center;
+}
+.main-nav li {
+	display: inline;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+    color: #2A4348;
+    text-decoration: none;
+}
+
+ul :hover{
+    color: #8D329A;
+    text-decoration: underline;
+}
+
+
+.widowmain{
+	height: auto;
+}
+
+
+.holy-grail,
+.holy-grail-body {
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+}
+
+
+
+.holy-grail-sidebar-1 {
+	order: -1;
+}
+
+
+@media (min-width: 480px) {
+
+	.holy-grail-body {
+		flex-direction: row;
+	}
+
+	.hg-sidebar {
+		flex: 0 0 260px;
+	}
+}
+
+
+.discription {
+	font-family: 'Zekton', sans-serif;
+	position: absolute;
+	margin: 2%;
+	padding: 100px;
+	color: #2A4348;
+	letter-spacing: .2rem;
+}
+
+@font-face {
+	font-family: "Zekton"; 
+	src: url("font/zekton.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+	} 
+
+.abil{ 
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding:20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: .2rem;
+
+}
